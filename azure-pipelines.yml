@@ -8,6 +8,7 @@ pool:
   vmImage: ubuntu-latest
 trigger:
   - master
+    batch: true
 
 steps:
   - task: CopyFiles@2
