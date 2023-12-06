@@ -27,7 +27,7 @@ steps:
     inputs:
       rootFolderOrFile: '$(Build.SourcesDirectory)'
       includeRootFolder: false
-  - task:
+  - task: PublishBuildArtifacts@1
     inputs:
       targetPath: '$(build.artifactstagingdirectory)'
       artifact: 'drop'
